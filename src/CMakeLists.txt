@@ -1,0 +1,5 @@
+add_executable(example_usage main.cpp)
+set_target_properties(example_usage PROPERTIES CXX_EXTENSIONS OFF OUTPUT_NAME example_usage)
+target_compile_features(example_usage PUBLIC cxx_std_20)
+
+add_subdirectory(test)
